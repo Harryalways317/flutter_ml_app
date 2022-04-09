@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'camera_screen.dart';
+import 'fruit_detector.dart';
 
 // Global variable for storing the list of cameras available
 List<CameraDescription> cameras = [];
@@ -52,7 +53,7 @@ class _HomePageState extends State<HomePage> {
               Navigator.push(context, MaterialPageRoute(builder: (context) => CameraScreen(page: 'barcode',)));
             },child: Text("Detect Barcode"),),
             MaterialButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => CameraScreen(page: 'barcode',)));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => FruitDetector()));
             },child: Text("Detect Fruits"),),
           ],
         ),
