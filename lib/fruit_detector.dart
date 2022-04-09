@@ -225,7 +225,7 @@ class _FruitDetectorState extends State<FruitDetector> {
                               ),
                               _output != null
                                   ? Text(
-                                'Predictions is, ${_output[0]['label']}',
+                                _output.length == 0? " Its not a fruit ":'Predictions is, ${_output[0]['label']}',
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 20),
